@@ -1,0 +1,9 @@
+# Virtual environment
+open_venv
+
+# OS
+.DS_Store
+Thumbs.db
+
+sat_images/
+test_sat_images/

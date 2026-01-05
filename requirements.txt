@@ -1,0 +1,32 @@
+# Core
+numpy>=1.26
+pandas>=2.1
+scikit-learn>=1.4
+
+# Deep Learning
+torch>=2.0
+torchvision>=0.15
+
+# ML Models
+xgboost>=2.0
+
+# Image Processing
+pillow>=10.0
+opencv-python>=4.9
+
+# Utilities
+tqdm>=4.66
+requests>=2.31
+
+# Visualization
+matplotlib>=3.8
+seaborn>=0.13
+
+# Geospatial
+geopandas>=0.14
+shapely>=2.0
+
+# Google Earth Engine & Auth
+earthengine-api>=0.1.390
+google-auth>=2.23
+google-auth-oauthlib>=1.2
