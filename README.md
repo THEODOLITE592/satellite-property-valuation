@@ -23,7 +23,9 @@ open_venv\Scripts\activate
 2️⃣ Install Dependencies
 pip install -r requirements.txt
 
-Satellite Image Download
+Satellite Image Download   
+
+* I have downloaded the images from google earth engine using their API so you need to make your project and id then the code will run *
 
 First, put the training dataset CSV inside the Data folder and change its name inside data_fetcher.py.
 
