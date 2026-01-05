@@ -1,5 +1,5 @@
 Satellite Imagery–Based Property Valuation
-#Overview
+Overview
 
 This project builds a multimodal regression pipeline to predict property prices by combining:
 
@@ -11,23 +11,26 @@ The motivation is to capture environmental and neighborhood context (green cover
 
 The system integrates computer vision, geospatial analysis, and machine learning to produce more accurate real-estate valuations.
 
-
 Environment Setup
-1 Create Virtual Environment
-
+1️⃣ Create Virtual Environment
 python -m venv open_venv
 
-and activate using open_venv\Scripts\activate
 
-2️ Install Dependencies
+Activate the environment:
 
+open_venv\Scripts\activate
+
+2️⃣ Install Dependencies
 pip install -r requirements.txt
 
-3 Satellite Image Download
+Satellite Image Download
 
-first put the training data set csv in Data folder and chnage the name of its in data_fetcher.py file
+First, put the training dataset CSV inside the Data folder and change its name inside data_fetcher.py.
+
+Run:
 
 python data_fetcher.py
+
 
 This creates:
 
@@ -35,11 +38,16 @@ sat_images/ for training
 
 test_sat_images/ for test data
 
-Feature Extraction/ Preprocessing
- 
-run preprocessing.ipynb cell by cell 
+Feature Extraction / Preprocessing
 
-there is also component of geospatial analysis where fig gets saved in plots.
+Run:
+
+preprocessing.ipynb
+
+
+Cell by cell.
+
+There is also a component of geospatial analysis where figures get saved in the plots folder.
 
 Satellite images are passed through ResNet50 (ImageNet pretrained).
 Final classification layer is removed → 2048-D embeddings.
@@ -47,6 +55,9 @@ Final classification layer is removed → 2048-D embeddings.
 Model Training
 
 Open and run:
+
+model_training.ipynb
+
 
 Models trained:
 
